@@ -1,0 +1,13 @@
+.groupRow{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* .groupCol{
+    display:flex;
+    flex-direction: column;
+  } */
+  
+  .item{
+    flex:1
+  }
