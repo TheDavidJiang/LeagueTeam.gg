@@ -6,10 +6,6 @@ import { Link } from "react-router-dom"
 
 function Header() {
 
-  const handleSubmit = async ()=>{
-    console.log("hello")
-  }
-
 
 
   return (
@@ -31,13 +27,6 @@ function Header() {
         </div>
       </nav>
 
-
-      <div>
-        <form onClick={handleSubmit}>
-          <input type="text" placeholder="Enter summoner name here" />
-          <Button variant="primary">Submit</Button>
-        </form>
-      </div>
     </header>
   );
 }
