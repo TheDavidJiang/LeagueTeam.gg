@@ -11,3 +11,9 @@
   .item{
     flex:1
   }
+
+  .photo{
+    /* height: 10%; */
+    width: 10%;
+    /* width: auto; */
+  }

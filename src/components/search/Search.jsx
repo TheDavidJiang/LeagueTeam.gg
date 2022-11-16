@@ -1,6 +1,11 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
-import SummonersPage from "./SummonersPage";
+import Summoner from "../../pages/Summoner";
+
+
+const riotKey = process.env.REACT_APP_RIOT_KEY
+
 
 
 
@@ -15,7 +20,8 @@ function Search(){
       e.preventDefault();
       const ac = new AbortController()
       try{
-        console.log("hellosz");
+
+        <Link to={`summoner`}></Link>
 
       }catch(e){
         setErrors([...errors, e])
@@ -34,7 +40,8 @@ function Search(){
     <div>
     <form onSubmit={handleSubmit}>
       <input type="text" placeholder="Enter summoner name here" onChange={handleChange}/>
-      <Button type="submit" variant="primary">Submit</Button>
+      
+      <Link to={`summoner`}><Button type="submit" variant="dark">Submit</Button></Link>
     </form>
   </div>)
 }

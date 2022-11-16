@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import Button from "react-bootstrap/Button";
-import mainLogo from "./images/logo.png";
+import mainLogo from "../../images/logo.png";
 import { Link } from "react-router-dom"
 
 function Header() {
@@ -9,6 +9,7 @@ function Header() {
 
 
   return (
+    <>
     <header>
       <nav className="navbar navbar-expand-lg navbar-light bg-light custom-nav">
         <a className="navbar-brand" href="http://www.google.com">
@@ -28,6 +29,13 @@ function Header() {
       </nav>
 
     </header>
+
+
+      <div>
+              <img className="photo" src={mainLogo} />
+      </div>
+
+    </>
   );
 }
 
