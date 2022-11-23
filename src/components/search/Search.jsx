@@ -39,7 +39,12 @@ function Search(){
     return (
     <div>
     <form onSubmit={handleSubmit}>
-      <input type="text" placeholder="Enter summoner name here" onChange={handleChange}/>
+      <input 
+      id="summonersName"
+      name="summonersName"
+      type="text" 
+      placeholder="Enter summoner name here" 
+      onChange={handleChange}/>
       
       <Link to={`summoner`}><Button type="submit" variant="dark">Submit</Button></Link>
     </form>

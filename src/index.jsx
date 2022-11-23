@@ -4,16 +4,24 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Layout from "./Layout";
 import Summoner from "./pages/Summoner";
 import Home from "./pages/Home";
-
+import ErrorPage from "./pages/Error-page";
+import SummonerPage from "./pages/SummonerPage";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Home />
+        element: <Home />,
+        errorElement: <ErrorPage />
     },
     {
         path: "/summoner",
-        element: <Summoner />
+        element: <Summoner />,
+        children:[
+            {
+                path: "summoner/:summonerName",
+                element: <SummonerPage />
+            }
+        ]
     }
 
 ]);
