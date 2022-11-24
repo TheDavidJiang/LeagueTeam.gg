@@ -1,3 +1,22 @@
+# Code Structure
+
+## Root
+Only App.js should stay here
+
+## Pages
+This is the higher level page componenets, Routes should point to pages
+
+## Constants
+This should hold constants and enums
+
+## Components
+This should hold the react components
+
+## Data
+This should hold utilities for making service calls and data operations
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
