@@ -1,10 +1,17 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
+<<<<<<<< HEAD:Archive/src/Search.js
+import SummonersPage from "./SummonersPage";
 
 const riotKey = process.env.REACT_APP_RIOT_KEY
 
 
+
+
+
+========
+>>>>>>>> 62dcc9729849c5084d2563be36d16423c85ffff5:src/components/Search.js
 
 function Search(){
 
@@ -12,7 +19,18 @@ function Search(){
 
     const handleSubmit = async (e)=>{
       e.preventDefault();
+<<<<<<<< HEAD:Archive/src/Search.js
+      const ac = new AbortController()
+      try{
+        console.log(riotKey)
 
+      }catch(e){
+        setErrors([...errors, e])
+        console.log(e)
+      }
+      
+========
+>>>>>>>> 62dcc9729849c5084d2563be36d16423c85ffff5:src/components/Search.js
     }
 
     

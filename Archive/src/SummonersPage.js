@@ -1,5 +1,6 @@
 import React from "react";
-import Summoner from "./Summoner";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 const axios = require("axios")
 
 // const url = "https://jsonplaceholder.typicode.com/posts"
@@ -12,7 +13,7 @@ const axios = require("axios")
 function SummonersPage(){
 
     return (
-        <Summoner />
+        "hello"
     )
 }
 

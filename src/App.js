@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
+// import "./App.css";
 import { NAV } from "./constants/nav_constants";
 import Home from "./pages/Home";
 import SummonersPage from "./pages/SummonersPage";

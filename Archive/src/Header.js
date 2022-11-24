@@ -1,7 +1,6 @@
 import React from "react";
 import "./Header.css";
 
-
 function Header() {
   return (
     <>
@@ -27,7 +26,7 @@ function Header() {
 
 
       <div>
-              <img className="photo" src={"/images/logo.png"} />
+              <img className="photo" src={mainLogo} />
       </div>
 
     </>

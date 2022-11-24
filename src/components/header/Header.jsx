@@ -1,8 +1,10 @@
 import React from "react";
 import "./Header.css";
 
-
 function Header() {
+
+
+
   return (
     <>
     <header>
@@ -24,11 +26,6 @@ function Header() {
       </nav>
 
     </header>
-
-
-      <div>
-              <img className="photo" src={"/images/logo.png"} />
-      </div>
 
     </>
   );
