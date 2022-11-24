@@ -1,42 +1,19 @@
 import React from "react";
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route,
-//   Link
-// } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Header from "./Header";
-import Search from "./Search";
+import { NAV } from "./constants/nav_constants";
+import Home from "./pages/Home";
+import SummonersPage from "./pages/SummonersPage";
 
 function App() {
   return (
-  <React.Fragment>
-    <Header />
-    <Search />
-    
-  </React.Fragment>
-//   <Router>
-//   <div>
-//     <nav>
-//       <ul>
-//         <li>
-//           <Link to="/">Home</Link>
-//         </li>
-
-//       </ul>
-//     </nav>
-
-//     {/* A <Switch> looks through its children <Route>s and
-//         renders the first one that matches the current URL. */}
-//     <Routes>
-
-//       <Route path="/">
-//         {/* <Header /> */}
-//       </Route>
-//     </Routes>
-//   </div>
-// </Router>
+    <BrowserRouter>
+      <Routes>
+          <Route path={NAV.HOME.path} element={<Home />} />
+          <Route path={NAV.SUMMONER_PAGE.path} element={<SummonersPage />} />
+          {/* Add more routes here */}
+      </Routes>
+    </BrowserRouter>
   )
 }
 
