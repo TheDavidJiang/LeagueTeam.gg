@@ -12,6 +12,9 @@ test
 # production
 /build
 
+# Archive
+/Archive
+
 # misc
 .DS_Store
 .env
