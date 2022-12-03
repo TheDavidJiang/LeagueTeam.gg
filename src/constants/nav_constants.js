@@ -6,7 +6,10 @@ const NAV = Object.freeze({
         path: "/"
     },
     SUMMONER_PAGE: {
-        path: "/summoner"
+        path: "/summoner",
+    },
+    SUMMONER_NAME: {
+        path: "/summoner/:summonerName"
     }
 });
 
