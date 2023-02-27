@@ -1,4 +1,3 @@
-import { Form } from "react-router-dom"
 import { useState } from "react"
 import axios from "axios"
 
@@ -6,29 +5,33 @@ import axios from "axios"
 
 export default function Summoner(){
 
+
+
+ let summonerName
+
     const initialInfoState = {
         summonerName: "",
         level: "",
         rank: ""
     }
 
-    const [summonerName, setSummonerName] = useState("")
+    // const [summonerName, setSummonerName] = useState("")
     const [summonerLevel, setSummonerLevel] = useState(0)
 
     const riotKey = process.env.REACT_APP_RIOT_KEY
     // const summonerName = //from the params
-    const url = `https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/Expired?api_key=${riotKey}`
+    const url = `https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${summonerName}?api_key=${riotKey}`
 
     axios.get(url).then((response)=>{
         const displaySummonerLevel = response.data.summonerLevel
         // console.log(displaySummonerName)
         // console.log(displaySummonerLevel)
-        setSummonerName(response.data.name)
+        // setSummonerName(response.data.name)
         setSummonerLevel(response.data.summonerLevel)
 
     })
 
-
+console.log("this the summoner name", summonerName)
 
     //use useState to store the response data
     const contact = {

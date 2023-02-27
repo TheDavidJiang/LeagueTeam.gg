@@ -7,10 +7,6 @@ import Summoner from "../../pages/Summoner";
 const riotKey = process.env.REACT_APP_RIOT_KEY
 
 
-
-
-
-
 function Search(){
 
   const [summonerName, setSummonerName] = useState("")
@@ -36,19 +32,19 @@ function Search(){
     }
     console.log("summName is: ", summonerName)
 
+
+
     return (
+      <>
     <div>
-    <form onSubmit={handleSubmit}>
-      <input 
-      id="summonersName"
-      name="summonersName"
-      type="text" 
-      placeholder="Enter summoner name here" 
-      onChange={handleChange}/>
-      
-      <Link to={`summoner`}><Button type="submit" variant="dark">Submit</Button></Link>
-    </form>
-  </div>)
+
+<div>
+  hello
+</div>
+  </div>
+
+  </>
+  )
 }
 
 export default Search
